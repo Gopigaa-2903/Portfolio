@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gopigaa G | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#0f172a,#020617);
+    color:white;
+    overflow-x:hidden;
+}
+
+/* NAVBAR */
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    background:rgba(15,23,42,0.8);
+    backdrop-filter:blur(10px);
+    display:flex;
+    justify-content:space-between;
+    padding:15px 40px;
+    z-index:1000;
+}
+
+nav h2{
+    color:#38bdf8;
+}
+
+nav a{
+    color:white;
+    margin-left:20px;
+    text-decoration:none;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero img{
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    object-fit:cover;
+    object-position: 50% 20%;
+}
+
+.hero h1{
+    font-size:40px;
+    margin-top:20px;
+}
+
+.hero span{
+    color:#38bdf8;
+}
+
+/* TYPE EFFECT */
+.typing{
+    margin-top:10px;
+    font-size:18px;
+    color:#94a3b8;
+    border-right:2px solid white;
+    white-space:nowrap;
+    overflow:hidden;
+    width:0;
+    animation:typing 4s steps(40,end) forwards, blink .7s infinite;
+}
+
+@keyframes typing{
+    to{width:100%;}
+}
+@keyframes blink{
+    50%{border-color:transparent;}
+}
+
+/* SECTION */
+section{
+    max-width:1000px;
+    margin:50px auto;
+    padding:30px;
+}
+
+/* CARD */
+.card{
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:25px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.5);
+}
+
+h2{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+/* SKILLS */
+.skills span{
+    display:inline-block;
+    padding:10px 15px;
+    margin:5px;
+    border-radius:20px;
+    background:#1e293b;
+    transition:0.3s;
+}
+
+.skills span:hover{
+    background:#38bdf8;
+    color:black;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    color:#94a3b8;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>Portfolio</h2>
+    <div>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<div class="hero">
+    <img src="your-photo.jpg" alt="Profile Photo">
+    <h1>Hi, I'm <span>Gopigaa</span></h1>
+    <div class="typing">Aspiring Data Scientist | Turning Data into Meaningful Insights</div>
+</div>
+
+<section id="about">
+    <div class="card">
+        <h2>About Me</h2>
+        <p>
+        I am a highly motivated Computer Science Engineering student with a strong academic background (CGPA: 8.75) and a deep interest in Data Science and Analytics. I specialize in using Python and data-driven techniques to extract insights and solve real-world problems.
+        <br><br>
+        I actively engage in hackathons, workshops, and technical events, where I collaborate with teams to design innovative and efficient solutions. My approach focuses on analytical thinking, continuous learning, and applying theoretical knowledge to practical scenarios.
+        <br><br>
+        I am currently seeking opportunities to contribute to impactful projects while further strengthening my expertise in data analysis, machine learning, and software development.
+        </p>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="card">
+        <h2>Projects</h2>
+
+        <p>
+        <strong>SYNAPSE-3D – Healthcare Visualization System</strong><br>
+        Developed an innovative solution that converts traditional MRI and CT scan images into interactive 3D holographic models. This system enhances medical diagnosis and surgical planning by providing a 360-degree visualization of complex anatomical structures.
+        <br>
+        Technologies Used: Python, Image Processing, 3D Visualization
+        </p>
+
+        <br>
+
+        <p>
+        <strong>Data Analysis and Visualization Project</strong><br>
+        Performed data cleaning, processing, and visualization using Python libraries such as Pandas and Matplotlib. Extracted meaningful insights from raw datasets to support data-driven decision-making.
+        <br>
+        Technologies Used: Python, Pandas, Matplotlib
+        </p>
+
+        <br>
+
+        <p>
+        <strong>Smart Pothole Maintenance Solution</strong><br>
+        Designed an eco-friendly and cost-effective solution for pothole detection and maintenance during a hackathon. Focused on sustainability and efficient resource utilization.
+        </p>
+
+    </div>
+</section>
+
+<section id="skills">
+    <div class="card">
+        <h2>Skills</h2>
+        <div class="skills">
+            <span>Python</span>
+            <span>Java</span>
+            <span>C Programming</span>
+            <span>MongoDB</span>
+            <span>HTML & CSS</span>
+            <span>Data Analysis</span>
+            <span>Problem Solving</span>
+            <span>Team Collaboration</span>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="card">
+        <h2>Achievements & Experience</h2>
+        <ul>
+            <li>Participated in Hack the Horizon 2025 and multiple national-level hackathons</li>
+            <li>Attended Data Science Workshop at NIT Trichy</li>
+            <li>Actively involved in technical events and collaborative projects</li>
+            <li>Continuously learning Data Science, AI, and emerging technologies</li>
+        </ul>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="card">
+        <h2>Contact</h2>
+        <p>Email: gopigaag583223104030@nprcolleges.org</p>
+        <p>Phone: +91 9788429060</p>
+        <p>
+            <a href="https://www.linkedin.com/in/gopigaa-g-2b23a72a0/" target="_blank">LinkedIn Profile</a>
+        </p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Gopigaa G | Designed Professionally</p>
+</footer>
+
+</body>
+</html>
